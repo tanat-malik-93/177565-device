@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Tanat Malik](https://up.htmlacademy.ru/htmlcss/20/user/177565).
-* Наставник: `Неизвестно`.
+* Наставник: [Анна Лёмина](https://up.htmlacademy.ru/htmlcss/20/user/83874).
 
 ---
 
