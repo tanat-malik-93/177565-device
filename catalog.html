@@ -46,56 +46,59 @@
         <li class="breadcrumbs-current">Монопод для селфи</li>
       </ul>
 
-      <section class="filters-section">
-        <h3>Фильтр</h3>
-        <!-- Здесь будет форма -->
-      </section>
+      <div class="page-content">
+      <!-- Обертка для того чтоб задать выравнивание с помощью флексбокса -->
+        
+        <aside class="filters-section">
+          <h3>Фильтр</h3>
+          <!-- Здесь будет форма -->
+        </aside>
 
-      <section class="catalog-section">
-        <div class="sort-block">
-          <h3>Сортировка:</h3>
-          <ul>
-            <li class="sort-current">По цене</li>
-            <li><a href="#">По типу</a></li>
-            <li><a href="#">По популярности</a></li>
-          </ul>
-          <div class="sort-arrows">
-            <a href="#" class="arrow-up"></a>
-            <a href="#" class="arrow-down"></a>
+        <section class="catalog-section">
+          <div class="sort-block">
+            <h3>Сортировка:</h3>
+            <ul>
+              <li class="sort-current">По цене</li>
+              <li><a href="#">По типу</a></li>
+              <li><a href="#">По популярности</a></li>
+            </ul>
+            <div class="sort-arrows">
+              <a href="#" class="arrow-up"></a>
+              <a href="#" class="arrow-down"></a>
+            </div>
           </div>
-        </div>
-        <div class="catalog-content">
-          <ul class="catalog-list">
-            <li class="catalog-item">
+          <div class="catalog-content">
+            <article class="catalog-item">
               <a href="#" class="catalog-img"><img src="http://placehold.it/150x100" alt="Картинка"></a>
               <span class="product-name">Любительская селфи-палка</span>
               <span class="product-price">500 руб.</span>
-            </li>
-            <li class="catalog-item">
+            </article>
+            <article class="catalog-item">
               <a href="#" class="catalog-img"><img src="http://placehold.it/150x100" alt="Картинка"></a>
               <span class="product-name">Профессиональная селфи-палка</span>
               <span class="product-price">1500 руб.</span>
-            </li>
-            <li class="catalog-item">
+            </article>
+            <article class="catalog-item">
               <a href="#" class="catalog-img"><img src="http://placehold.it/150x100" alt="Картинка"></a>
               <span class="product-name">Непотопляемая селфи-палка</span>
               <span class="product-price">2500 руб.</span>
-            </li>
-            <li class="catalog-item">
+            </article>
+            <article class="catalog-item">
               <a href="#" class="catalog-img"><img src="http://placehold.it/150x100" alt="Картинка"></a>
               <span class="product-name">Селфи-палка &laquo;Следуй за мной&raquo;</span>
               <span class="product-price">4900 руб.</span>
-            </li>
-          </ul>
-          <div class="catalog-paginator">
-            <a href="#" class="prev-catalog">Назад</a>
-            <a href="#" class="paginator-item paginator-item-current">1</a>
-            <a href="#" class="paginator-item">2</a>
-            <a href="#" class="paginator-item">3</a>
-            <a href="#" class="next-catalog">Вперед</a>
+            </article>
+            <div class="catalog-paginator">
+              <a href="#" class="prev-catalog">Назад</a>
+              <a href="#" class="paginator-item paginator-item-current">1</a>
+              <a href="#" class="paginator-item">2</a>
+              <a href="#" class="paginator-item">3</a>
+              <a href="#" class="next-catalog">Вперед</a>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+
+      </div>
 
   	</main>
 
@@ -106,13 +109,12 @@
   			<b>г. Москва, ул. Строителей, 15</b>
   		</div>
   		<div class="footer-center">
-  			<!-- Убрать nav -->
-  			<a href="#">Доставка</a>
-  			<a href="#">Гарантия</a>
-  			<a href="#">Контакты</a>
-  			<!-- Покороче название -->
+  			<ul>
+          <li><a href="#">Доставка</a></li>
+          <li><a href="#">Гарантия</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
   			<div class="footer-social">
-  				<!-- Убрать списки, оставить ссылки -->
           <a class="social-button" href="#">Вконтакте</a>
           <a class="social-button" href="#">Инстаграм</a>
           <a class="social-button" href="#">Твиттер</a>
