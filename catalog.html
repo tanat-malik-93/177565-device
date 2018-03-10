@@ -52,6 +52,51 @@
         <aside class="filters-section">
           <h3>Фильтр</h3>
           <!-- Здесь будет форма -->
+          <form class="catalog-filter" method="get" action="#">
+            <fieldset>
+              <legend>Стоимость</legend>
+              от 0<input type="range" name="range" min="0" step="1" max="5000">до 5000
+            </fieldset>
+            <fieldset>
+              <legend>Цвет</legend>
+              <ul>
+                <li class="filter-option">
+                  <input type="checkbox" name="black" id="black">
+                  <label for="black">Черный</label>
+                </li>
+                <li class="filter-option">
+                  <input type="checkbox" name="white" id="white">
+                  <label for="white">Белый</label>
+                </li>
+                <li class="filter-option">
+                  <input type="checkbox" name="Синий" id="blue">
+                  <label for="blue">Синий</label>
+                </li>
+                <li class="filter-option">
+                  <input type="checkbox" name="red" id="red">
+                  <label for="red">Красный</label>
+                </li>
+                <li class="filter-option">
+                  <input type="checkbox" name="pink" id="pink">
+                  <label for="pink">Розовый</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset>
+              <legend>Bluetooth</legend>
+              <ul>
+                <li class="filter-option">
+                  <input type="radio" name="one-choice" id="first-choice" value="yes" checked>
+                  <label for="first-choice">Да</label>
+                </li>
+                <li class="fliter-option">
+                  <input type="radio" name="one-choice" id="second-choice" value="no">
+                  <label for="second-choice">Нет</label>
+                </li>
+              </ul>
+            </fieldset>
+            <button type="submit" class="button">Показать</button>
+          </form>
         </aside>
 
         <section class="catalog-section">
@@ -69,21 +114,25 @@
           </div>
           <div class="catalog-content">
             <article class="catalog-item">
+              <h2 class="visually-hidden">Название товара</h2>
               <a href="#" class="catalog-img"><img src="img/catalog-item-1.jpg" width="360" height="380" alt="Картинка"></a>
               <span class="product-name">Любительская селфи-палка</span>
               <span class="product-price">500 руб.</span>
             </article>
             <article class="catalog-item">
+              <h2 class="visually-hidden">Название товара</h2>
               <a href="#" class="catalog-img"><img src="img/catalog-item-2.jpg" width="360" height="380" alt="Картинка"></a>
               <span class="product-name">Профессиональная селфи-палка</span>
               <span class="product-price">1500 руб.</span>
             </article>
             <article class="catalog-item">
+              <h2 class="visually-hidden">Название товара</h2>
               <a href="#" class="catalog-img"><img src="img/catalog-item-3.jpg" width="360" height="380" alt="Картинка"></a>
               <span class="product-name">Непотопляемая селфи-палка</span>
               <span class="product-price">2500 руб.</span>
             </article>
             <article class="catalog-item">
+              <h2 class="visually-hidden">Название товара</h2>
               <a href="#" class="catalog-img"><img src="img/catalog-item-4.jpg" width="360" height="380" alt="Картинка"></a>
               <span class="product-name">Селфи-палка &laquo;Следуй за мной&raquo;</span>
               <span class="product-price">4900 руб.</span>
@@ -115,9 +164,9 @@
           <li><a href="#">Контакты</a></li>
         </ul>
   			<div class="footer-social">
-          <a class="social-button" href="#">Вконтакте</a>
-          <a class="social-button" href="#">Инстаграм</a>
-          <a class="social-button" href="#">Твиттер</a>
+          <a class="social-button" href="#" aria-label="Вконтакте">Вконтакте</a>
+          <a class="social-button" href="#" aria-label="Инстаграм">Инстаграм</a>
+          <a class="social-button" href="#" aria-label="Твиттер">Твиттер</a>
   			</div>
   		</div>
   		<div class="footer-right">
