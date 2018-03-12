@@ -4,13 +4,22 @@
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
     <style>
-    	
+    	/*.visually-hidden {
+			  position: absolute;
+			  width: 1px;
+			  height: 1px;
+			  margin: -1px;
+			  border: 0;
+			  padding: 0;
+			  clip: rect(0 0 0 0);
+			  overflow: hidden;
+			}*/
     </style>
   </head>
   <body>
 
   	<header class="main-header">
-  		<a href="#" class="site-logo">Device</a>
+  		<a href="index.html" class="site-logo" title="Лого сайта">Device</a>
   		<nav class="main-navigation">
   			<form class="search-form">
   				<input type="search" placeholder="Пойск по сайту">
@@ -43,15 +52,18 @@
   	<main class="container">
 
   		<section class="slider-section">
+  			<input class="visually-hidden" type="radio" id="slider-btn-1" name="slider-toggle" checked> 
+				<input class="visually-hidden" type="radio" id="slider-btn-2" name="slider-toggle"> 
+				<input class="visually-hidden" type="radio" id="slider-btn-3" name="slider-toggle">
+	 			<div class="slider-control">
+      		<label for="slider-btn-1"></label>
+      		<label for="slider-btn-2"></label>
+      		<label for="slider-btn-3"></label>
+				</div>
   			<ul class="slider-content">
-  				<!-- <div class="slider-control">
-        		<label for="slider-btn-1"></label>
-        		<label for="slider-btn-2"></label>
-        		<label for="slider-btn-3"></label>
-					</div> -->
   				<li class="slider-item">
   					<div class="slider-image">
-  						<img src="img/slider-1.png" width="384" height="486" alt="Картинка">
+  						<img src="img/slider-1.png" width="384" height="486" alt="Селфи-палка">
   					</div>
   					<div class="slider-descr">
   						<h2>Делай селфи, как Бен Стиллер!</h2>
@@ -75,7 +87,7 @@
   				</li>
   				<li class="slider-item">
   					<div class="slider-image">
-  						<img src="img/slider-2.png" width="345" height="485" alt="Картинка">
+  						<img src="img/slider-2.png" width="345" height="485" alt="Фитнес-браслет">
   					</div>
   					<div class="slider-descr">
   						<h2>Худеем правильно</h2>
@@ -91,7 +103,7 @@
   				</li>
   				<li class="slider-item">
   					<div class="slider-image">
-  						<img src="img/slider-3.png" width="526" height="334" alt="Картинка">
+  						<img src="img/slider-3.png" width="526" height="334" alt="Квадрокоптер">
   					</div>
   					<div class="slider-descr">
   						<h2>Порхает как бабочка, жалит как пчела</h2>
@@ -114,36 +126,39 @@
 
   		<section class="popular">
   				<a href="catalog.html" class="popular-item">
-  					<img src="img/svg-device/popular-1.svg" alt="Картинка">
+  					<img src="img/svg-device/popular-1.svg" width="97" height="55" alt="Виртуальная реальность">
   					<h3>Виртуальная реальность</h3>
   				</a>
   				<a href="catalog.html" class="popular-item">
-  					<img src="img/svg-device/popular-2.svg" alt="Картинка">
+  					<img src="img/svg-device/popular-2.svg" width="86" height="117" alt="Моноподы для селфи">
   					<h3>Моноподы для селфи</h3>
   				</a>
   				<a href="catalog.html" class="popular-item">
-  					<img src="img/svg-device/popular-3.svg" alt="Картинка">
+  					<img src="img/svg-device/popular-3.svg" width="71" height="87" alt="Экшн-камеры">
   					<h3>Экшн-камеры</h3>
   				</a>
   				<a href="catalog.html" class="popular-item">
-  					<img src="img/svg-device/popular-4.svg" alt="Картинка">
+  					<img src="img/svg-device/popular-4.svg" width="107" height="65" alt="Фитнес браслеты">
   					<h3>Фитнес браслеты</h3>
   				</a>
   				<a href="catalog.html" class="popular-item">
-  					<img src="img/svg-device/popular-5.svg" alt="Картинка">
+  					<img src="img/svg-device/popular-5.svg" width="56" height="98" alt="Умные часы">
   					<h3>Умные часы</h3>
   				</a>
   				<a href="catalog.html" class="popular-item">
-  					<img src="img/svg-device/popular-6.svg" alt="Картинка">
+  					<img src="img/svg-device/popular-6.svg" width="132" height="69" alt="Квадрокоптеры">
   					<h3>Квадрокоптеры</h3>
   				</a>
   		</section>
 
   		<section class="services"> 
+  			<input class="visually-hidden" type="radio" id="services-btn-1" name="services-toggle" checked> 
+				<input class="visually-hidden" type="radio" id="services-btn-2" name="services-toggle"> 
+				<input class="visually-hidden" type="radio" id="services-btn-3" name="services-toggle"> 
 				<div class="service-control">
-					<button type="button" class="button service-button">Доставка</button>
-					<button type="button" class="button service-button">Гарантия</button>
-					<button type="button" class="button service-button">Кредит</button>
+					<label for="services-btn-1">Доставка</label> 
+					<label for="services-btn-2">Гарантия</label> 
+					<label for="services-btn-3">Кредит</label> 
 				</div>
 				<ul class="service-inner"> 
 					<li class="service-item">
@@ -164,10 +179,10 @@
   		<section class="logotypes">
   			<h2 class="visually-hidden">Логотипы</h2>
   			<!-- Картинки к ссылкам задать с помощью CSS, т.е. спрайтами -->
-  			<a href="#"></a>
-  			<a href="#"></a>
-  			<a href="#"></a>
-  			<a href="#"></a>
+  			<a href="#" title="Логотип DJI"></a>
+  			<a href="#" title="Логотип SP Gadjets"></a>
+  			<a href="#" title="Логотип GoPro"></a>
+  			<a href="#" title="Логотип VIVE"></a>
   		</section>
 
   		<!-- Взять в обертку, и заменить section-ы на дивы, и задать флексбокс -->
@@ -186,8 +201,7 @@
   			<div class="section-contact">
   				<h2>Контакты</h2>
   				<p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-  				<!-- Здесь скорее всего будет скрипт, так что на время пусть стоит картинка -->
-  				<img src="img/map.jpg" width="560" height="222" alt="Карта">
+  				<img src="img/map.jpg" width="560" height="222" alt="Наш адрес: г. Москва, ул. Строителей, 15">
   				<a href="contacts.html">Контакты</a>
   			</div>
   		</section>
@@ -196,7 +210,7 @@
 
   	<footer class="main-footer">
   		<div class="footer-left">
-  			<a href="index.html">Device</a>
+  			<a href="index.html" class="site-logo" title="Лого сайта">Device</a>
   			<b>г. Москва, ул. Строителей, 15</b>
   		</div>
   		<div class="footer-center">
@@ -213,44 +227,50 @@
   		</div>
   		<div class="footer-right">
   			<ul>
-  				<li><a href="#">Войти</a></li>
-  				<li><a href="#">Сравнить</a></li>
-  				<li><a href="#">Корзина</a></li>
+  				<li class="login-link"><a href="#">Войти</a></li>
+  				<li class="compare-link"><a href="#">Сравнить</a></li>
+  				<li class="basket-link"><a href="#">Корзина</a></li>
   			</ul>
   			<b>Тел.: +7 (495) 495-95-95</b>
-  			<a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/svg-device/logo-html.svg" alt="Картинка"></a>
+  			<a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="HTMLAcademy"><img src="img/svg-device/logo-html.svg" alt="Логотип HTMLAcademy"></a>
   		</div>
 
   	</footer>
 
-  	<section class="modal modal-write-us">
-  		<h2 class="visually-hidden">Написать нам</h2>
-  		<!-- Тегом label временно задал <br>. Потом уберу -->
-  		<form class="write-us-form" action="#" method="post">
-  			<div class="half-width">
-  				<label for="user-name">Ваше Имя:</label><br>
-  				<input type="text" name="user-name" id="user-name" placeholder="Имя Фамилия" required>
-  			</div>
-  			<div class="half-width">
-  				<label for="user-email">Ваш e-mail:</label><br>
-  				<input type="email" name="user-email" id="user-email" placeholder="email@example.com" required>
-  			</div>
-  			<div class="full-width">
-  				<label for="user-comment">Текст письма:</label><br>
-  				<textarea name="user-comment" id="user-comment" rows="5">В свободной форме</textarea>
-  			</div>
-  			<button type="submit" class="button">Отправить</button>
-  		</form>
-  		<button type="button" class="modal-close">Закрыть</button>
-  	</section>
+  	<div class="modal">
 
-  	<section class="modal modal-map">
-  		<h2 class="visually-hidden">Как до нас добраться</h2>
-  		<p>
-  			<img src="img/map-big.jpg" width="994" height="593" alt="Большая карта">
-  		</p>
-  		<button type="button" class="modal-close">Закрыть</button>
-  	</section>
+  		<div class="modal-write-us">
+	  		<div class="modal-shadow"></div>
+	  		<h2 class="visually-hidden">Написать нам</h2>
+	  		<form class="write-us-form" action="https://htmlacademy.ru" method="post">
+	  			<div class="wrapper-equalizer">
+	  				<label for="user-name">Ваше Имя:
+	  				<input type="text" name="user-name" id="user-name" placeholder="Имя Фамилия" required>
+	  				</label>
+	  				<label for="user-email">Ваш e-mail:
+	  				<input type="email" name="user-email" id="user-email" placeholder="email@example.com" required>
+	  				</label>
+	  			</div>
+	  			<label for="user-comment">Текст письма:
+	  			<textarea name="user-comment" id="user-comment" rows="5">В свободной форме</textarea>
+	  			</label>
+	  			<button type="submit" class="button">Отправить</button>
+	  		</form>
+	  		<button type="button" id="js-write-us-close" class="modal-close">
+	  			<span class="visually-hidden">Закрыть</span>
+	  		</button>
+  		</div>
+
+	  	<div class="modal-map">
+	  		<div class="modal-shadow"></div>
+	  		<h2 class="visually-hidden">Как до нас добраться</h2>
+	  		<!-- <iframe src=""></iframe> -->
+	  		<button type="button" id="js-map-close" class="modal-close">
+	  			<span class="visually-hidden">Закрыть</span>
+	  		</button>
+	  	</div>
+
+  	</div>
 
   </body>
 </html>
