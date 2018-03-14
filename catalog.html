@@ -3,51 +3,43 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
-    <style>
-      /*.visually-hidden {
-        position: absolute;
-        width: 1px;
-        height: 1px;
-        margin: -1px;
-        border: 0;
-        padding: 0;
-        clip: rect(0 0 0 0);
-        overflow: hidden;
-      }*/
-    </style>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
-  <body>
+  <body class="inner-page">
 
   	<header class="main-header">
-  		<a href="index.html" class="site-logo" title="Лого сайта">Device</a>
-  		<nav class="main-navigation">
-  			<form class="search-form">
-  				<input type="search" placeholder="Пойск по сайту">
-  				<input type="submit" value="Найти">
-  			</form>
-  			<ul class="user-navigation">
-          <li class="user-name"><a href="#">Валентин Петухов</a></li>
-  				<li class="sign-out"><a href="#">Выйти</a></li>
-  				<li class="compare-link"><a href="#">Сравнить</a></li>
-  				<li class="basket-link"><a href="#">Корзина</a></li>
-  			</ul>
-  			<ul class="site-navigation">
-  				<li class="catalog-menu">
-  					<a href="#">Каталог товаров</a>
-  					<ul class="catalog-sub-menu">
-  						<li><a href="#">Виртуальная реальность</a></li>
-  						<li><a href="#">Моноподы для селфи</a></li>
-  						<li><a href="#">Экшн-камеры</a></li>
-  						<li><a href="#">Фитнес-браслеты</a></li>
-  						<li><a href="#">Умные часы</a></li>
-  						<li><a href="#">Квадрокоптеры</a></li>
-  					</ul>
-  				</li>
-  				<li><a href="#">Доставка</a></li>
-  				<li><a href="#">Гарантия</a></li>
-  				<li><a href="#">Контакты</a></li>
-  			</ul>
-  		</nav>
+  		<div class="header-wrapper">
+        <a href="index.html" class="header-logo" title="Лого сайта">Device</a>
+        <nav class="main-navigation">
+          <form class="search-form">
+            <input type="search" placeholder="Пойск по сайту">
+            <input type="submit" value="Найти">
+          </form>
+          <ul class="user-navigation">
+            <li class="user-name"><a href="#">Валентин Петухов</a></li>
+            <li class="sign-out"><a href="#">Выйти</a></li>
+            <li class="compare-link"><a href="#">Сравнить</a></li>
+            <li class="basket-link"><a href="#">Корзина</a></li>
+          </ul>
+          <ul class="site-navigation">
+            <li class="catalog-menu">
+              <a href="#">Каталог товаров</a>
+              <ul class="catalog-sub-menu">
+                <li><a href="#">Виртуальная реальность</a></li>
+                <li><a href="#">Моноподы для селфи</a></li>
+                <li><a href="#">Экшн-камеры</a></li>
+                <li><a href="#">Фитнес-браслеты</a></li>
+                <li><a href="#">Умные часы</a></li>
+                <li><a href="#">Квадрокоптеры</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Доставка</a></li>
+            <li><a href="#">Гарантия</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
   	</header>
 
   	<main class="container">
@@ -64,7 +56,7 @@
         
         <aside class="filters-section">
           <h3>Фильтр</h3>
-          <form class="catalog-filter" method="post" action="https://htmlacademy.ru">
+          <form class="catalog-filter" method="get" action="https://htmlacademy.ru">
             <fieldset>
               <legend>Стоимость</legend>
               <div class="filter-range-controls">
@@ -82,23 +74,23 @@
             <fieldset>
               <legend>Цвет</legend>
               <div class="filter-option">
-                <input type="checkbox" name="black" id="black">
+                <input class="visually hidden filter-input" type="checkbox" name="black" id="black">
                 <label for="black">Черный</label>
               </div>
               <div class="filter-option">
-                <input type="checkbox" name="white" id="white">
+                <input class="visually hidden filter-input" type="checkbox" name="white" id="white">
                 <label for="white">Белый</label>
               </div>
               <div class="filter-option">
-                <input type="checkbox" name="Синий" id="blue">
+                <input class="visually hidden filter-input" type="checkbox" name="Синий" id="blue">
                 <label for="blue">Синий</label>
               </div>
               <div class="filter-option">
-                <input type="checkbox" name="red" id="red">
+                <input class="visually hidden filter-input" type="checkbox" name="red" id="red">
                 <label for="red">Красный</label>
               </div>
               <div class="filter-option">
-                <input type="checkbox" name="pink" id="pink">
+                <input class="visually hidden filter-input" type="checkbox" name="pink" id="pink">
                 <label for="pink">Розовый</label>
               </div>
             </fieldset>
@@ -106,10 +98,10 @@
               <legend>Bluetooth</legend>
               <div class="filter-option">
                 <input type="radio" name="one-choice" id="first-choice" value="yes" checked>
-                <label for="first-choice">Да</label>
+                <label class="visually hidden filter-input" for="first-choice">Да</label>
               </div>
               <div class="fliter-option">
-                <input type="radio" name="one-choice" id="second-choice" value="no">
+                <input class="visually hidden filter-input" type="radio" name="one-choice" id="second-choice" value="no">
                 <label for="second-choice">Нет</label>
               </div>
             </fieldset>
@@ -138,6 +130,10 @@
               </a>
               <span class="product-name">Любительская селфи-палка</span>
               <span class="product-price">500 руб.</span>
+              <div class="catalog-item-hover">
+                <button class="button" type="button">В корзину</button>
+                <a href="#">Добавить к сравнению</a>
+              </div>
             </article>
             <article class="catalog-item">
               <h2 class="visually-hidden">Профессиональная селфи-палка</h2>
@@ -146,6 +142,10 @@
               </a>
               <span class="product-name">Профессиональная селфи-палка</span>
               <span class="product-price">1500 руб.</span>
+              <div class="catalog-item-hover">
+                <button class="button" type="button">В корзину</button>
+                <a href="#">Добавить к сравнению</a>
+              </div>
             </article>
             <article class="catalog-item">
               <h2 class="visually-hidden">Непотопляемая селфи-палка</h2>
@@ -154,6 +154,10 @@
               </a>
               <span class="product-name">Непотопляемая селфи-палка</span>
               <span class="product-price">2500 руб.</span>
+              <div class="catalog-item-hover">
+                <button class="button" type="button">В корзину</button>
+                <a href="#">Добавить к сравнению</a>
+              </div>
             </article>
             <article class="catalog-item">
               <h2 class="visually-hidden">Селфи-палка &laquo;Следуй за мной&raquo;</h2>
@@ -161,6 +165,10 @@
               </a>
               <span class="product-name">Селфи-палка &laquo;Следуй за мной&raquo;</span>
               <span class="product-price">4900 руб.</span>
+              <div class="catalog-item-hover">
+                <button class="button" type="button">В корзину</button>
+                <a href="#">Добавить к сравнению</a>
+              </div>
             </article>
             <div class="catalog-paginator">
               <a href="#" class="paginator-prev">Назад</a>
@@ -179,7 +187,7 @@
   	<footer class="main-footer">
   	<!-- С помощью флексбоксов -->
   		<div class="footer-left">
-  			<a href="index.html" class="site-logo" title="Лого сайта">Device</a>
+  			<a href="index.html" class="footer-logo" title="Лого сайта">Device</a>
   			<b>г. Москва, ул. Строителей, 15</b>
   		</div>
   		<div class="footer-center">

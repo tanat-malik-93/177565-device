@@ -3,50 +3,42 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
-    <style>
-    	/*.visually-hidden {
-			  position: absolute;
-			  width: 1px;
-			  height: 1px;
-			  margin: -1px;
-			  border: 0;
-			  padding: 0;
-			  clip: rect(0 0 0 0);
-			  overflow: hidden;
-			}*/
-    </style>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
 
   	<header class="main-header">
-  		<a href="index.html" class="site-logo" title="Лого сайта">Device</a>
-  		<nav class="main-navigation">
-  			<form class="search-form">
-  				<input type="search" placeholder="Пойск по сайту">
-  				<input type="submit" value="Найти">
-  			</form>
-  			<ul class="user-navigation">
-  				<li class="login-link"><a href="#">Войти</a></li>
-  				<li class="compare-link"><a href="#">Сравнить</a></li>
-  				<li class="basket-link"><a href="#">Корзина</a></li>
-  			</ul>
-  			<ul class="site-navigation">
-  				<li class="catalog-menu">
-  					<a href="catalog.html">Каталог товаров</a>
-  					<ul class="catalog-sub-menu">
-  						<li><a href="#">Виртуальная реальность</a></li>
-  						<li><a href="#">Моноподы для селфи</a></li>
-  						<li><a href="#">Экшн-камеры</a></li>
-  						<li><a href="#">Фитнес-браслеты</a></li>
-  						<li><a href="#">Умные часы</a></li>
-  						<li><a href="#">Квадрокоптеры</a></li>
-  					</ul>
-  				</li>
-  				<li><a href="#">Доставка</a></li>
-  				<li><a href="#">Гарантия</a></li>
-  				<li><a href="#">Контакты</a></li>
-  			</ul>
-  		</nav>
+  		<div class="header-wrapper">
+  			<a href="index.html" class="header-logo" title="Лого сайта">Device</a>
+	  		<nav class="main-navigation">
+	  			<form class="search-form">
+	  				<input type="search" placeholder="Пойск по сайту">
+	  				<input type="submit" value="Найти">
+	  			</form>
+	  			<ul class="user-navigation">
+	  				<li class="login-link"><a href="#">Войти</a></li>
+	  				<li class="compare-link"><a href="#">Сравнить</a></li>
+	  				<li class="basket-link"><a href="#">Корзина</a></li>
+	  			</ul>
+	  			<ul class="site-navigation">
+	  				<li class="catalog-menu">
+	  					<a href="catalog.html">Каталог товаров</a>
+	  					<ul class="catalog-sub-menu">
+	  						<li><a href="#">Виртуальная реальность</a></li>
+	  						<li><a href="#">Моноподы для селфи</a></li>
+	  						<li><a href="#">Экшн-камеры</a></li>
+	  						<li><a href="#">Фитнес-браслеты</a></li>
+	  						<li><a href="#">Умные часы</a></li>
+	  						<li><a href="#">Квадрокоптеры</a></li>
+	  					</ul>
+	  				</li>
+	  				<li><a href="#">Доставка</a></li>
+	  				<li><a href="#">Гарантия</a></li>
+	  				<li><a href="#">Контакты</a></li>
+	  			</ul>
+	  		</nav>
+  		</div>
   	</header>
 
   	<main class="container">
@@ -66,7 +58,7 @@
   						<img src="img/slider-1.png" width="384" height="486" alt="Селфи-палка">
   					</div>
   					<div class="slider-descr">
-  						<h2>Делай селфи, как Бен Стиллер!</h2>
+  						<h2>Делай селфи,<br> как Бен Стиллер!</h2>
   						<p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
   						<a href="#" class="button slider-button">Подробнее</a>
   						<ul>
@@ -156,9 +148,9 @@
 				<input class="visually-hidden" type="radio" id="services-btn-2" name="services-toggle"> 
 				<input class="visually-hidden" type="radio" id="services-btn-3" name="services-toggle"> 
 				<div class="service-control">
-					<label for="services-btn-1">Доставка</label> 
-					<label for="services-btn-2">Гарантия</label> 
-					<label for="services-btn-3">Кредит</label> 
+					<label class="button" for="services-btn-1">Доставка</label> 
+					<label class="button" for="services-btn-2">Гарантия</label> 
+					<label class="button" for="services-btn-3">Кредит</label> 
 				</div>
 				<ul class="service-inner"> 
 					<li class="service-item">
@@ -202,7 +194,7 @@
   				<h2>Контакты</h2>
   				<p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
   				<img src="img/map.jpg" width="560" height="222" alt="Наш адрес: г. Москва, ул. Строителей, 15">
-  				<a href="contacts.html">Контакты</a>
+  				<a href="#" class="button">Напишите нам</a>
   			</div>
   		</section>
 
@@ -210,7 +202,7 @@
 
   	<footer class="main-footer">
   		<div class="footer-left">
-  			<a href="index.html" class="site-logo" title="Лого сайта">Device</a>
+  			<a href="index.html" class="footer-logo" title="Лого сайта">Device</a>
   			<b>г. Москва, ул. Строителей, 15</b>
   		</div>
   		<div class="footer-center">
@@ -232,7 +224,7 @@
   				<li class="basket-link"><a href="#">Корзина</a></li>
   			</ul>
   			<b>Тел.: +7 (495) 495-95-95</b>
-  			<a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="HTMLAcademy"><img src="img/svg-device/logo-html.svg" alt="Логотип HTMLAcademy"></a>
+  			<a href="https://htmlacademy.ru/intensive/htmlcss" class="academy-logo" aria-label="HTMLAcademy"><img src="img/svg-device/logo-html.svg" alt="Логотип HTMLAcademy"></a>
   		</div>
 
   	</footer>
@@ -244,9 +236,9 @@
 	  		<h2 class="visually-hidden">Написать нам</h2>
 	  		<form class="write-us-form" action="https://htmlacademy.ru" method="post">
 	  			<div class="wrapper-equalizer">
-	  				<label for="user-name">Ваше Имя:
+	  				<label for="user-name">Ваше Имя:</label>
+	  				<!-- input вне подписи -->
 	  				<input type="text" name="user-name" id="user-name" placeholder="Имя Фамилия" required>
-	  				</label>
 	  				<label for="user-email">Ваш e-mail:
 	  				<input type="email" name="user-email" id="user-email" placeholder="email@example.com" required>
 	  				</label>
