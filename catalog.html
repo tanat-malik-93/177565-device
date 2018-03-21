@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
-  <body class="inner-page">
+  <body>
 
   	<header class="main-header">
       <div class="header-wrapper">
@@ -42,6 +42,7 @@
       </div>
     </header>
 
+    <!-- Обернуть в какой нить класс оборутку -->
   	<main class="container">
 
   		<h1 class="page-title">Моноподы для селфи</h1>
@@ -55,6 +56,7 @@
       <!-- Обертка для того чтоб задать выравнивание с помощью флексбокса -->
         
         <aside class="filters-section">
+          <!-- Повесить класс для h3 -->
           <h3>Фильтр</h3>
           <form class="catalog-filter" method="get" action="https://htmlacademy.ru">
             <fieldset>
@@ -209,9 +211,10 @@
 
   	</main>
 
+    <!-- Footer не должен подподать в еще одну обертку -->
   	<footer class="main-footer">
 
-      <div class="footer-wrapper">
+      <div class="container">
         <div class="footer-left">
           <a href="index.html" class="footer-logo" title="Лого сайта">Device</a>
           <b>г. Москва, ул. Строителей, 15</b>
