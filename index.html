@@ -8,9 +8,9 @@
   </head>
   <body>
 
-  	<!-- Сначала container потом header -->
-  	<header class="main-header">
-  		<div class="header-wrapper">
+  	<div class="container">
+
+  		<header class="main-header">
   			<a href="index.html" class="header-logo" title="Лого сайта">Device</a>
 	  		<nav class="main-navigation">
 	  			<form class="search-form">
@@ -39,14 +39,11 @@
   				<li><a href="#">Гарантия</a></li>
   				<li><a href="#">Контакты</a></li>
   			</ul>
-  		</div>
-  	</header>
-
-  	<div class="container">
+  		</header>
 
   		<section class="slider-section">
   			<!-- Взять в обертку slider-control -->
-  			<div class="slider-control-block">
+  			<!-- <div class="slider-control-block">
   				<input class="visually-hidden" type="radio" id="slider-btn-1" name="slider-toggle" checked> 
 					<input class="visually-hidden" type="radio" id="slider-btn-2" name="slider-toggle"> 
 					<input class="visually-hidden" type="radio" id="slider-btn-3" name="slider-toggle">
@@ -55,7 +52,7 @@
 	      		<label for="slider-btn-2"></label>
 	      		<label for="slider-btn-3"></label>
 					</div>
-  			</div>
+  			</div> -->
   			<ul class="slider-content">
   				<li class="slider-item">
   					<div class="slider-image">
@@ -81,7 +78,7 @@
   						</ul>
   					</div>
   				</li>
-  				<li class="slider-item" style="display:none;">
+  				<li class="slider-item">
   					<div class="slider-image">
   						<img src="img/slider-2.png" width="345" height="485" alt="Фитнес-браслет">
   					</div>
@@ -97,7 +94,7 @@
   						</ul>
   					</div>
   				</li>
-  				<li class="slider-item" style="display:none;">
+  				<li class="slider-item">
   					<div class="slider-image">
   						<img src="img/slider-3.png" width="526" height="334" alt="Квадрокоптер">
   					</div>
@@ -188,67 +185,93 @@
 			</div>
 		</section>
 
-		<div class="container">
+		<section class="logotypes container">
+			<h2 class="visually-hidden">Логотипы</h2>
+			<a href="#" title="Логотип DJI"></a>
+			<a href="#" title="Логотип SP Gadjets"></a>
+			<a href="#" title="Логотип GoPro"></a>
+			<a href="#" title="Логотип VIVE"></a>
+		</section>
 
-  		<section class="logotypes">
-  			<h2 class="visually-hidden">Логотипы</h2>
-  			<!-- Картинки к ссылкам задать с помощью CSS, т.е. спрайтами -->
-  			<a href="#" title="Логотип DJI"></a>
-  			<a href="#" title="Логотип SP Gadjets"></a>
-  			<a href="#" title="Логотип GoPro"></a>
-  			<a href="#" title="Логотип VIVE"></a>
-  		</section>
-
-  		<section class="main-about-us">	
-  			<div class="section-info">
-  				<h2>О нас</h2>
-  				<p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-  				<p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями.</p>
-  				<ul class="info-nav">
-  					<li>Деловые линии</li>
-  					<li>Автотрейдинг</li>
-  					<li>ЖелДорЭкспедиция</li>
-  				</ul>
-  				<a href="#" class="button">Подробнее о нас</a>
-  			</div>
-  			<div class="section-contact">
-  				<h2>Контакты</h2>
-  				<p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-  				<img src="img/map.jpg" width="560" height="222" alt="Наш адрес: г. Москва, ул. Строителей, 15">
-  				<a href="#" class="button">Напишите нам</a>
-  			</div>
-  		</section>
-
-  	</div>
-
+		<section class="main-about-us container">	
+			<div class="section-info">
+				<h2>О нас</h2>
+				<p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+				<p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями.</p>
+				<ul class="info-nav">
+					<li>Деловые линии</li>
+					<li>Автотрейдинг</li>
+					<li>ЖелДорЭкспедиция</li>
+				</ul>
+				<a href="#" class="button">Подробнее о нас</a>
+			</div>
+			<div class="section-contact">
+				<h2>Контакты</h2>
+				<p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
+				<img src="img/map.jpg" width="560" height="222" alt="Наш адрес: г. Москва, ул. Строителей, 15">
+				<a href="#" class="button">Напишите нам</a>
+			</div>
+		</section>
 
   	<footer class="main-footer">
+
   		<div class="container">
-  			<div class="footer-left">
-	  			<a href="index.html" class="footer-logo" title="Лого сайта">Device</a>
-	  			<b>г. Москва, ул. Строителей, 15</b>
-	  		</div>
-	  		<div class="footer-center">
-	  			<ul>
-	  				<li><a href="#">Доставка</a></li>
-	  				<li><a href="#">Гарантия</a></li>
-	  				<li><a href="#">Контакты</a></li>
-	  			</ul>
-	  			<div class="footer-social">
-	          <a class="social-button social-fb" href="#" aria-label="Вконтакте"></a>
-	          <a class="social-button social-insta" href="#" aria-label="Инстаграм"></a>
-	          <a class="social-button social-tw" href="#" aria-label="Твиттер"></a>
-	  			</div>
-	  		</div>
-	  		<div class="footer-right">
-	  			<ul>
+
+  			<div class="footer-top">
+  				<a href="index.html" class="footer-logo" title="Лого сайта">Device</a>
+  				<ul>
 	  				<li><a class="login-link" href="#">Войти</a></li>
 	  				<li><a class="compare-link" href="#">Сравнить</a></li>
 	  				<li><a class="basket-link" href="#">Корзина</a></li>
 	  			</ul>
+  			</div>
+  			<div class="footer-middle">
+  				<b>г. Москва, ул. Строителей, 15</b>
+  				<ul>
+	  				<li><a href="#">Доставка</a></li>
+	  				<li><a href="#">Гарантия</a></li>
+	  				<li><a href="#">Контакты</a></li>
+	  			</ul>
 	  			<b>Тел.: +7 (495) 495-95-95</b>
-	  			<a href="https://htmlacademy.ru/intensive/htmlcss" class="academy-logo" aria-label="HTMLAcademy"><img src="img/svg-device/logo-html.svg" alt="Логотип HTMLAcademy"></a>
-	  		</div>
+  			</div>
+  			<div class="footer-bottom">
+  				<div class="footer-social">
+	          <a class="social-button social-fb" href="#" aria-label="Вконтакте"></a>
+	          <a class="social-button social-insta" href="#" aria-label="Инстаграм"></a>
+	          <a class="social-button social-tw" href="#" aria-label="Твиттер"></a>
+	  			</div>
+	  			<div class="academy-logo">
+	  				<a href="https://htmlacademy.ru/intensive/htmlcss" class="academy-logo" aria-label="HTMLAcademy"><img src="img/svg-device/logo-html.svg" width="27" height="35" alt="Логотип HTMLAcademy"></a>
+	  			</div>
+  			</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  			
+
   		</div>
 
   	</footer>
