@@ -42,19 +42,16 @@
   		</header>
 
   		<section class="slider-section">
-  			<!-- Взять в обертку slider-control -->
-  			<!-- <div class="slider-control-block">
-  				<input class="visually-hidden" type="radio" id="slider-btn-1" name="slider-toggle" checked> 
-					<input class="visually-hidden" type="radio" id="slider-btn-2" name="slider-toggle"> 
-					<input class="visually-hidden" type="radio" id="slider-btn-3" name="slider-toggle">
-		 			<div class="slider-control">
-	      		<label for="slider-btn-1"></label>
-	      		<label for="slider-btn-2"></label>
-	      		<label for="slider-btn-3"></label>
-					</div>
-  			</div> -->
-  			<ul class="slider-content">
-  				<li class="slider-item">
+				<input class="visually-hidden" type="radio" id="product-1" name="slider-toggle" checked> 
+				<input class="visually-hidden" type="radio" id="product-2" name="slider-toggle"> 
+				<input class="visually-hidden" type="radio" id="product-3" name="slider-toggle">
+	 			<div class="slider-controls">
+      		<label for="product-1"></label>
+      		<label for="product-2"></label>
+      		<label for="product-3"></label>
+				</div>
+  			<ul class="slider-list">
+  				<li class="slider-item" id="slide1">
   					<div class="slider-image">
   						<img src="img/slider-1.png" width="384" height="486" alt="Селфи-палка">
   					</div>
@@ -78,7 +75,7 @@
   						</ul>
   					</div>
   				</li>
-  				<li class="slider-item">
+  				<li class="slider-item" id="slide2">
   					<div class="slider-image">
   						<img src="img/slider-2.png" width="345" height="485" alt="Фитнес-браслет">
   					</div>
@@ -94,7 +91,7 @@
   						</ul>
   					</div>
   				</li>
-  				<li class="slider-item">
+  				<li class="slider-item" id="slide3">
   					<div class="slider-image">
   						<img src="img/slider-3.png" width="526" height="334" alt="Квадрокоптер">
   					</div>
@@ -164,20 +161,20 @@
 				<input class="visually-hidden" type="radio" id="services-btn-2" name="services-toggle"> 
 				<input class="visually-hidden" type="radio" id="services-btn-3" name="services-toggle"> 
 				<div class="service-control">
-					<label class="button" for="services-btn-1">Доставка</label>
-					<label class="button" for="services-btn-2">Гарантия</label>
-					<label class="button" for="services-btn-3">Кредит</label> 
+					<label class="button service-button" for="services-btn-1">Доставка</label>
+					<label class="button service-button" for="services-btn-2">Гарантия</label>
+					<label class="button service-button" for="services-btn-3">Кредит</label> 
 				</div>
 				<ul class="service-inner"> 
-					<li class="service-item service-delivery">
+					<li class="service-item service-delivery" id="service1">
 						<h2 class="service-title">Доставка</h2>
 						<p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
 					</li>
-					<li class="service-item service-warranty" style="display:none;">
+					<li class="service-item service-warranty" id="service2">
 						<h2 class="service-title">Гарантия</h2>
 						<p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
 					</li>
-					<li class="service-item service-credit" style="display:none;">
+					<li class="service-item service-credit" id="service3">
 						<h2 class="service-title">Кредит</h2>
 						<p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
 					</li>

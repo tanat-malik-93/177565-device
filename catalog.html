@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
-  <body>
+  <body class="inner-page">
 
   	<div class="container">
       
@@ -61,20 +61,22 @@
           
           <aside class="filters-section">
             <!-- Повесить класс для h3 -->
-            <h3>Фильтр</h3>
+            <h3>Фильтр:</h3>
             <form class="catalog-filter" method="get" action="https://htmlacademy.ru">
               <fieldset>
                 <legend>Стоимость</legend>
-                <div class="filter-range-controls">
-                  <div class="range-scale">
-                    <div style="width: 60%;" class="range-bar"></div>
+                <div class="range-filter">
+                  <div class="range-controls">
+                    <div class="scale">
+                      <div class="bar"></div>
+                    </div>
+                    <div class="toggle toggle-min"></div>
+                    <div class="toggle toggle-max"></div>
                   </div>
-                  <div class="range-toggle range-toggle-min"></div>
-                  <div class="range-toggle range-toggle-max"></div>
-                </div>
-                <div class="filter-range-value">
-                  <label class="range-min-price">от <input type="text" name="min-price" value="0"></label>
-                  <label class="range-max-price">до <input  type="text" name="max-price" value="5000"></label>
+                  <div class="price-controls">
+                    <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+                    <label class="max-price">до <input name="max-price" type="text" value="5000"></label>
+                  </div>
                 </div>
               </fieldset>
               <fieldset>
@@ -139,7 +141,7 @@
                   <img src="img/catalog-item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
                   </a>
                   <div class="catalog-item-hover">
-                    <button class="button" type="button">В корзину</button>
+                    <button class="button catalog-item-button" type="button">В корзину</button>
                     <a href="#">Добавить к сравнению</a>
                   </div>
                 </div>
@@ -156,7 +158,7 @@
                   <img src="img/catalog-item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
                   </a>
                   <div class="catalog-item-hover">
-                    <button class="button" type="button">В корзину</button>
+                    <button class="button catalog-item-button" type="button">В корзину</button>
                     <a href="#">Добавить к сравнению</a>
                   </div>
                 </div>
@@ -173,7 +175,7 @@
                   <img src="img/catalog-item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
                   </a>
                   <div class="catalog-item-hover">
-                    <button class="button" type="button">В корзину</button>
+                    <button class="button catalog-item-button" type="button">В корзину</button>
                     <a href="#">Добавить к сравнению</a>
                   </div>
                 </div>
@@ -190,7 +192,7 @@
                   <img src="img/catalog-item-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
                   </a>
                   <div class="catalog-item-hover">
-                    <button class="button" type="button">В корзину</button>
+                    <button class="button catalog-item-button" type="button">В корзину</button>
                     <a href="#">Добавить к сравнению</a>
                   </div>
                 </div>
