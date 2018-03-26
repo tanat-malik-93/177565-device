@@ -13,8 +13,8 @@
   		<header class="main-header">
   			<a href="index.html" class="header-logo" title="Лого сайта">Device</a>
 	  		<nav class="main-navigation">
-	  			<form class="search-form">
-	  				<input type="search" placeholder="Пойск по сайту">
+	  			<form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+	  				<input type="text" placeholder="Пойск по сайту">
 	  				<input type="submit" value="Найти">
 	  			</form>
 	  			<ul class="user-navigation">
@@ -27,12 +27,18 @@
   				<li class="catalog-menu">
   					<a href="catalog.html">Каталог товаров</a>
   					<ul class="catalog-sub-menu">
-  						<li><a href="#">Виртуальная реальность</a></li>
-  						<li><a href="#">Моноподы для селфи</a></li>
-  						<li><a href="#">Экшн-камеры</a></li>
-  						<li><a href="#">Фитнес-браслеты</a></li>
-  						<li><a href="#">Умные часы</a></li>
-  						<li><a href="#">Квадрокоптеры</a></li>
+  						<li>
+  							<a href="#">Виртуальная реальность</a>
+  							<a href="#">Моноподы для селфи</a>
+  							<a href="#">Экшн-камеры</a>
+  						</li>
+  						<li>
+  							<a href="#">Фитнес-браслеты</a>
+  							<a href="#">Умные часы</a>
+  							</li>
+  						<li>
+  							<a href="#">Квадрокоптеры</a>
+  						</li>
   					</ul>
   				</li>
   				<li><a href="#">Доставка</a></li>
@@ -60,6 +66,7 @@
   						<p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
   						<a href="#" class="button slider-button">Подробнее</a>
   						<ul>
+  							<!-- Убрать margin, задать ширину -->
   							<li>
   								<p class="slider-feature-value">8,5 м</p>
   								<p class="slider-feature-info">Длина палки</p>
@@ -80,7 +87,7 @@
   						<img src="img/slider-2.png" width="345" height="485" alt="Фитнес-браслет">
   					</div>
   					<div class="slider-descr">
-  						<h2>Худеем правильно</h2>
+  						<h2>Худеем<br> правильно!</h2>
   						<p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
   						<a href="#" class="button slider-button">Подробнее</a>
   						<ul>
@@ -96,7 +103,7 @@
   						<img src="img/slider-3.png" width="526" height="334" alt="Квадрокоптер">
   					</div>
   					<div class="slider-descr">
-  						<h2>Порхает как бабочка, жалит как пчела</h2>
+  						<h2>Порхает как бабочка, жалит как пчела!</h2>
   						<p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
   						<a href="#" class="button slider-button">Подробнее</a>
   						<ul>
@@ -242,33 +249,6 @@
 	  			</div>
   			</div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  			
-
   		</div>
 
   	</footer>
@@ -278,7 +258,7 @@
   		<div class="modal-write-us">
 	  		<div class="modal-shadow"></div>
 	  		<h2 class="visually-hidden">Написать нам</h2>
-	  		<form class="write-us-form" action="https://htmlacademy.ru" method="post">
+	  		<form class="write-us-form" action="https://echo.htmlacademy.ru"" method="post">
 	  			<div class="wrapper-equalizer">
 	  				<label for="user-name">Ваше Имя:</label>
 	  				<!-- input вне подписи -->

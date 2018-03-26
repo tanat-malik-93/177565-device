@@ -14,27 +14,33 @@
       
         <a href="index.html" class="header-logo" title="Лого сайта">Device</a>
         <nav class="main-navigation">
-          <form class="search-form">
-            <input type="search" placeholder="Пойск по сайту">
+          <form class="search-form" action="https://echo.htmlacademy.ru"">
+            <input type="text" placeholder="Пойск по сайту">
             <input type="submit" value="Найти">
           </form>
           <ul class="user-navigation">
-            <li class="user-name"><a href="#">Валентин Петухов</a></li>
-            <li class="sign-out"><a href="#">Выйти</a></li>
-            <li class="compare-link"><a href="#">Сравнить</a></li>
-            <li class="basket-link"><a href="#">Корзина</a></li>
+            <li><a class="user-name" href="#">Валентин Петухов</a></li>
+            <li><a class="sign-out" href="#">Выйти</a></li>
+            <li><a class="compare-link" href="#">Сравнить</a></li>
+            <li><a class="basket-link" href="#">Корзина</a></li>
           </ul>
         </nav>
         <ul class="site-navigation">
           <li class="catalog-menu">
             <a href="catalog.html">Каталог товаров</a>
             <ul class="catalog-sub-menu">
-              <li><a href="#">Виртуальная реальность</a></li>
-              <li><a href="#">Моноподы для селфи</a></li>
-              <li><a href="#">Экшн-камеры</a></li>
-              <li><a href="#">Фитнес-браслеты</a></li>
-              <li><a href="#">Умные часы</a></li>
-              <li><a href="#">Квадрокоптеры</a></li>
+              <li>
+                <a href="#">Виртуальная реальность</a>
+                <a href="#">Моноподы для селфи</a>
+                <a href="#">Экшн-камеры</a>
+              </li>
+              <li>
+                <a href="#">Фитнес-браслеты</a>
+                <a href="#">Умные часы</a>
+                </li>
+              <li>
+                <a href="#">Квадрокоптеры</a>
+              </li>
             </ul>
           </li>
           <li><a href="#">Доставка</a></li>
@@ -60,9 +66,8 @@
         <div class="page-content">
           
           <aside class="filters-section">
-            <!-- Повесить класс для h3 -->
             <h3>Фильтр:</h3>
-            <form class="catalog-filter" method="get" action="https://htmlacademy.ru">
+            <form class="catalog-filter" method="get" action="https://echo.htmlacademy.ru"">
               <fieldset>
                 <legend>Стоимость</legend>
                 <div class="range-filter">
@@ -82,38 +87,38 @@
               <fieldset>
                 <legend>Цвет</legend>
                 <div class="filter-option">
-                  <input class="visually hidden filter-input" type="checkbox" name="black" id="black">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="black" id="black">
                   <label for="black">Черный</label>
                 </div>
                 <div class="filter-option">
-                  <input class="visually hidden filter-input" type="checkbox" name="white" id="white">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="white" id="white">
                   <label for="white">Белый</label>
                 </div>
                 <div class="filter-option">
-                  <input class="visually hidden filter-input" type="checkbox" name="Синий" id="blue">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Синий" id="blue">
                   <label for="blue">Синий</label>
                 </div>
                 <div class="filter-option">
-                  <input class="visually hidden filter-input" type="checkbox" name="red" id="red">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="red" id="red">
                   <label for="red">Красный</label>
                 </div>
                 <div class="filter-option">
-                  <input class="visually hidden filter-input" type="checkbox" name="pink" id="pink">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="pink" id="pink">
                   <label for="pink">Розовый</label>
                 </div>
               </fieldset>
               <fieldset>
                 <legend>Bluetooth</legend>
                 <div class="filter-option">
-                  <input type="radio" name="one-choice" id="first-choice" value="yes" checked>
-                  <label class="visually hidden filter-input" for="first-choice">Да</label>
+                  <input class="visually-hidden filter-input filter-input-radio" type="radio" name="one-choice" id="first-choice" value="yes" checked>
+                  <label for="first-choice">Есть</label>
                 </div>
-                <div class="fliter-option">
-                  <input class="visually hidden filter-input" type="radio" name="one-choice" id="second-choice" value="no">
+                <div class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-radio" type="radio" name="one-choice" id="second-choice" value="no">
                   <label for="second-choice">Нет</label>
                 </div>
               </fieldset>
-              <button type="submit" class="button">Показать</button>
+              <button type="submit" class="button filter-button">Показать</button>
             </form>
           </aside>
 
