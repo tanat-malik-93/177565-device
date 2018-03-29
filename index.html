@@ -14,8 +14,8 @@
   			<a href="index.html" class="header-logo" title="Лого сайта">Device</a>
 	  		<nav class="main-navigation">
 	  			<form class="search-form" action="https://echo.htmlacademy.ru" method="post">
-	  				<input type="text" placeholder="Пойск по сайту">
-	  				<input type="submit" value="Найти">
+	  				<input type="text" class="search-form-input" placeholder="Пойск по сайту">
+	  				<input type="submit" class="search-form-button" value="Найти">
 	  			</form>
 	  			<ul class="user-navigation">
 	  				<li><a class="login-link" href="#">Войти</a></li>
@@ -66,7 +66,6 @@
   						<p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
   						<a href="#" class="button slider-button">Подробнее</a>
   						<ul>
-  							<!-- Убрать margin, задать ширину -->
   							<li>
   								<p class="slider-feature-value">8,5 м</p>
   								<p class="slider-feature-info">Длина палки</p>
@@ -173,15 +172,15 @@
 					<label class="button service-button" for="services-btn-3">Кредит</label> 
 				</div>
 				<ul class="service-inner"> 
-					<li class="service-item service-delivery" id="service1">
+					<li class="service-item" id="service1">
 						<h2 class="service-title">Доставка</h2>
 						<p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
 					</li>
-					<li class="service-item service-warranty" id="service2">
+					<li class="service-item" id="service2">
 						<h2 class="service-title">Гарантия</h2>
 						<p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
 					</li>
-					<li class="service-item service-credit" id="service3">
+					<li class="service-item" id="service3">
 						<h2 class="service-title">Кредит</h2>
 						<p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
 					</li>
@@ -212,8 +211,8 @@
 			<div class="section-contact">
 				<h2>Контакты</h2>
 				<p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-				<img src="img/map.jpg" width="560" height="222" alt="Наш адрес: г. Москва, ул. Строителей, 15">
-				<a href="#" class="button">Напишите нам</a>
+				<img class="map-button" src="img/map.jpg" width="560" height="222" alt="Наш адрес: г. Москва, ул. Строителей, 15">
+				<a href="#" class="button button-write-us">Напишите нам</a>
 			</div>
 		</section>
 
@@ -255,36 +254,37 @@
 
 		<div class="modal modal-write-us">
   		<h2 class="visually-hidden">Написать нам</h2>
-  		<form action="https://echo.htmlacademy.ru"" method="post">
+  		<form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
 				<div class="wrapper-equalizer">
 					<p>
 						<label for="user-name">Ваше Имя:</label>
-						<input type="text" name="user-name" id="user-name" placeholder="Имя Фамилия" required>
+						<input type="text" name="user-name" id="user-name" placeholder="Имя Фамилия">
 					</p>
 					<p>
 						<label for="user-email">Ваш e-mail:</label>
-						<input type="email" name="user-email" id="user-email" placeholder="email@example.com" required>
+						<input type="email" name="user-email" id="user-email" placeholder="email@example.com">
 					</p>
 				</div>
 				<label for="user-comment">Текст письма:</label>
 				<textarea name="user-comment" id="user-comment" rows="7">В свободной форме</textarea>
   			<button type="submit" class="button modal-button">Отправить</button>
   		</form>
-  		<button type="button" id="js-write-us-close" class="modal-close">
+  		<button type="button" class="modal-close">
   			<span class="visually-hidden">Закрыть</span>
-  		</button>
   		</button>
 		</div>
 
   	<div class="modal modal-map">
   		<h2 class="visually-hidden">Как до нас добраться</h2>
-  		<!-- <iframe src=""></iframe> -->
+  		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426" width="960" height="560" allowfullscreen></iframe>
   		<p><img src="img/map-big.jpg" width="960" height="560" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></p>
-  		<button type="button" id="js-map-close" class="modal-close">
+  		<button type="button" class="modal-close">
   			<span class="visually-hidden">Закрыть</span>
   		</button>
   	</div>
 
+
+  	<!-- <script src="js/script.js"></script> -->
 
   </body>
 </html>
