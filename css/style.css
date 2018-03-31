@@ -204,11 +204,15 @@ input[type="radio"].visually-hidden {
     cursor: pointer;
 }
 
-.search-form-input:focus {
+.search-form:active .search-form-input,
+.search-form .search-form-input:focus {
     border-bottom: 2px solid #000;
+    opacity: 1;
+    outline: none;
 }
 
-.search-form-input:focus + .search-form-button {
+.search-form .search-form-input:focus ~ input[type="submit"],
+.search-form .search-form-input:focus ~ input[type="submit"]:focus {
     display: inline-block;
 }
 
