@@ -49,8 +49,7 @@ window.addEventListener("keydown", function (evt) {
   }
 });
 
-/*modal-map script*/
-var mapLink = document.querySelector(".map-button");
+var mapLink = document.querySelector(".map-block");
 var mapPopup = document.querySelector(".modal-map");
 var mapClose = mapPopup.querySelector(".modal-close");
 mapLink.addEventListener("click", function (evt) {
